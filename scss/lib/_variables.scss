@@ -1,0 +1,15 @@
+$submitButton-color: #f8f9fa;
+$submitButton-border-color: #dadce0;
+
+$navbar-button-color: #f0f0f0;
+$navbar-font-color: #000000de;
+
+$main-input: #dfe1e5;
+
+$footer-font-color: #70757a;
+
+$navbar-height: 48px;
+
+@media screen and (min-width: 768px){
+  $navbar-height: 60px;
+}

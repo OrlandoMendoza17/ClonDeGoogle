@@ -1,0 +1,312 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+main {
+  padding: 10px;
+  height: calc(100vh - 94px - 48px);
+  min-height: 250px;
+  display: grid;
+  grid-template-columns: minmax(auto, 582px);
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+main #search {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media screen and (min-width: 480px) {
+  main {
+    height: calc(100vh - 140px - 48px);
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    height: calc(100vh - 48px - 46px - 60px);
+  }
+}
+
+.main-logo {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.main-logo__image {
+  width: 160px;
+}
+@media screen and (min-width: 768px) {
+  .main-logo__image {
+    width: auto;
+  }
+}
+
+.navbar {
+  padding: 0 4px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 6px 10px;
+    grid-template-columns: 1fr;
+  }
+}
+.navbar a, .navbar li {
+  font-size: 1.2rem;
+  color: #000000de;
+  font-weight: 600;
+  font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .navbar a, .navbar li {
+    font-family: Arial, sans-serif;
+    text-transform: unset;
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+}
+.navbar .navbar-responsive {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: left;
+  gap: 10px;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navbar .navbar-responsive {
+    display: none;
+  }
+}
+.navbar .navbar-responsive a, .navbar .navbar-responsive li {
+  color: #70757a;
+}
+.navbar .navbar-responsive li {
+  padding: 0 8px;
+}
+.navbar .navbar-responsive li:nth-child(2) {
+  line-height: 46px;
+  border-bottom: 2px solid #4285f4;
+}
+.navbar .navbar-responsive li:nth-child(2) a {
+  color: #4285f4;
+}
+.navbar .navbar-responsive__app-button {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.navbar .navbar-responsive__app-button img {
+  opacity: 0.5;
+  width: 24px;
+}
+.navbar .navbar-responsive__app-button:hover {
+  background-color: #f0f0f0;
+}
+.navbar .navbar-items {
+  display: grid;
+  grid-template-columns: auto 48px;
+  grid-template-rows: 48px;
+  justify-content: right;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navbar .navbar-items {
+    grid-template-columns: repeat(3, auto) 48px;
+  }
+}
+.navbar .navbar-items li {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar-items li:nth-child(1),
+.navbar .navbar-items li:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navbar .navbar-items li:nth-child(1),
+.navbar .navbar-items li:nth-child(2) {
+    display: block;
+  }
+}
+.navbar .navbar-items li:nth-child(2) {
+  padding: 0 15px;
+}
+.navbar .navbar-items__app-button {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.navbar .navbar-items__app-button img {
+  opacity: 0.5;
+  width: 24px;
+}
+.navbar .navbar-items__app-button:hover {
+  background-color: #f0f0f0;
+}
+.navbar .navbar-items__user-img {
+  cursor: pointer;
+}
+.navbar .navbar-items__user-img img {
+  border-radius: 50%;
+}
+
+.search-section .search {
+  padding: 0 14px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 35px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .search-section .search {
+    height: 46px;
+  }
+}
+.search-section .search:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: #dfe1e500;
+}
+.search-section .search__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+.search-section .search__input {
+  padding: 0 14px;
+  background: none;
+  border: none;
+}
+.search-section .search__voice {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.submit-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 25px;
+}
+.submit-section .search-buttons {
+  display: none;
+  grid-template-columns: repeat(2, 170px);
+  justify-content: center;
+  justify-items: center;
+}
+.submit-section .search-buttons button {
+  padding: 0 16px;
+  border-radius: 4px;
+  color: #202124;
+  height: 36px;
+  font-size: 1.4rem;
+  background-color: #f8f9fa;
+  line-height: 27px;
+  cursor: pointer;
+}
+.submit-section .search-buttons button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+}
+@media screen and (min-width: 768px) {
+  .submit-section .search-buttons {
+    display: grid;
+  }
+}
+.submit-section .english-version {
+  font-size: 1.3rem;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #70757a;
+}
+.footer .current-country {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  height: 48px;
+  border-bottom: 1px solid #dfe1e5;
+}
+.footer .nav-footer {
+  font-size: 1.4rem;
+  padding: 0 20px;
+  height: 46px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.footer .nav-footer ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer .nav-footer ul:nth-child(1) {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .footer .nav-footer {
+    height: 92px;
+  }
+  .footer .nav-footer ul:nth-child(1) {
+    display: grid;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .nav-footer {
+    height: 46px;
+    grid-template-columns: auto auto;
+  }
+  .footer .nav-footer ul:nth-child(1) {
+    justify-content: left;
+  }
+  .footer .nav-footer ul:nth-child(2) {
+    justify-content: right;
+    display: grid;
+  }
+}
+.footer a {
+  color: #70757a;
+}

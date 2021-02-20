@@ -1,0 +1,26 @@
+@mixin searchButton (){
+  padding: 0 16px;
+  border-radius: 4px;
+  color: #202124;
+  height: 36px;
+  font-size: 1.4rem;
+  background-color: $submitButton-color;
+  line-height: 27px;
+  cursor: pointer;
+  
+  &:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid $submitButton-border-color;
+  }
+}
+@mixin center{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+@mixin notPortraitSeen(){
+  display: none;
+  @media screen and (min-width: 768px){
+    display: block;
+  }
+}

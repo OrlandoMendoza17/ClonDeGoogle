@@ -1,0 +1,22 @@
+html{
+  font-size: 62.5%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+button, input{
+  outline: none;
+}
+button{
+  background: none;
+  border: none;
+}
