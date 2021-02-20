@@ -28,23 +28,13 @@ button {
 
 main {
   padding: 56px 10px 10px 10px;
-  height: calc(100vh - 94px - 48px);
+  height: calc(100vh - 94px - 100px);
   min-height: 250px;
   display: grid;
   grid-template-columns: minmax(auto, 582px);
   justify-content: center;
   align-content: flex-start;
   gap: 26px;
-}
-main #search {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-}
-@media screen and (min-width: 768px) {
-  main #search {
-    gap: 29px;
-  }
 }
 @media screen and (min-width: 480px) {
   main {
@@ -57,6 +47,16 @@ main #search {
     height: calc(100vh - 48px - 46px - 60px);
     padding: 10px;
     align-content: center;
+  }
+}
+main #search {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  main #search {
+    gap: 29px;
   }
 }
 

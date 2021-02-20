@@ -1,22 +1,12 @@
 main{
   padding: 56px 10px 10px 10px;
-  height: calc(100vh - 94px - 48px);
+  height: calc(100vh - 94px - 100px);
   min-height: 250px;
   display: grid;
   grid-template-columns: minmax(auto, 582px);
   justify-content: center;
   align-content: flex-start;
   gap: 26px;
-  
-  #search{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
-    
-    @media screen and (min-width: 768px){
-      gap: 29px;
-    }
-  }
   
   @media screen and (min-width: 480px){
     height: calc(100vh - 140px - 48px);
@@ -26,6 +16,16 @@ main{
     height: calc(100vh - 48px - 46px - 60px);
     padding: 10px;
     align-content: center;
+  }
+  
+  #search{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    
+    @media screen and (min-width: 768px){
+      gap: 29px;
+    }
   }
 }
 .main-logo{
