@@ -27,19 +27,24 @@ button {
 }
 
 main {
-  padding: 10px;
+  padding: 56px 10px 10px 10px;
   height: calc(100vh - 94px - 48px);
   min-height: 250px;
   display: grid;
   grid-template-columns: minmax(auto, 582px);
   justify-content: center;
-  align-content: center;
-  gap: 20px;
+  align-content: flex-start;
+  gap: 26px;
 }
 main #search {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  main #search {
+    gap: 29px;
+  }
 }
 @media screen and (min-width: 480px) {
   main {
@@ -48,7 +53,10 @@ main #search {
 }
 @media screen and (min-width: 768px) {
   main {
+    gap: 26px;
     height: calc(100vh - 48px - 46px - 60px);
+    padding: 10px;
+    align-content: center;
   }
 }
 
@@ -110,6 +118,9 @@ main #search {
 .navbar .navbar-responsive li {
   padding: 0 8px;
 }
+.navbar .navbar-responsive li:nth-child(1) {
+  padding: 0;
+}
 .navbar .navbar-responsive li:nth-child(2) {
   line-height: 46px;
   border-bottom: 2px solid #4285f4;
@@ -118,16 +129,12 @@ main #search {
   color: #4285f4;
 }
 .navbar .navbar-responsive__app-button {
-  display: grid;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   cursor: pointer;
 }
 .navbar .navbar-responsive__app-button img {
-  opacity: 0.5;
   width: 24px;
 }
 .navbar .navbar-responsive__app-button:hover {
@@ -164,16 +171,13 @@ main #search {
   padding: 0 15px;
 }
 .navbar .navbar-items__app-button {
-  display: grid;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   cursor: pointer;
 }
 .navbar .navbar-items__app-button img {
-  opacity: 0.5;
+  opacity: 0.6;
   width: 24px;
 }
 .navbar .navbar-items__app-button:hover {
