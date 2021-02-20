@@ -233,9 +233,9 @@ main{
     border-bottom: 1px solid $main-input;
   }
   .nav-footer{
+    height: 92px;
     font-size: 1.4rem;
     padding: 0 20px;
-    height: 46px;
     display: grid;
     grid-template-columns: 1fr;
     
@@ -247,14 +247,13 @@ main{
       gap: 10px;
     }
     
-    ul:nth-child(1){
+    ul:nth-child(1) li:nth-child(4){
       display: none;
     }
     
     @media screen and (min-width: 480px){
-      height: 92px;
-      ul:nth-child(1){
-        display: grid;
+      ul:nth-child(1) li:nth-child(4){
+        display: inline;
       }
     }
     @media screen and (min-width: 768px){
@@ -266,7 +265,6 @@ main{
       }
       ul:nth-child(2){
         justify-content: right;
-        display: grid;
       }
     }
     
